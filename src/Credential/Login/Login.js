@@ -25,10 +25,8 @@ const Login =(props)=>{
         }
     }
     let loginhandler=()=>{
-        if(state.userName===cred.user && state.password===cred.pwd)
-        {
+       
             props.history.push({pathname:"/dashboard"})
-        }
     }
     
     return(
@@ -49,7 +47,7 @@ const Login =(props)=>{
                     <Form.Check type="checkbox" label="Remember me" />
                 </Form.Group>
                 <div className="d-grid gap-2">
-                <Button variant="primary" size="lg" style={{margin:"1em 0em 0em"}}  type="submit">
+                <Button variant="primary" size="lg" style={{margin:"1em 0em 0em"}} onClick={loginhandler}  type="submit">
                     Submit
                 </Button>
                 <Button variant="light" style={{margin:"1em 0em 0em", display:"block"}}  type="submit">
