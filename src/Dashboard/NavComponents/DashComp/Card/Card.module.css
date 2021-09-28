@@ -1,0 +1,60 @@
+.card{
+    position: relative;
+    top:0rem;
+    left:25%;
+    transform: translateX(-50%);
+    margin-top:1.5rem;
+    margin-left: 3rem;
+    border: 1px solid grey;
+    height: 22rem;
+    width: 18rem;
+    background-color:white;
+    border-radius:8px;
+    border: 0px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17px rgba(0, 0, 0, 0.072),
+    0 41.8px 33px rgba(0, 0, 0, 0.086),
+    0 10px 70px rgba(0, 0, 0, 0.12);
+    float:left;
+    font-family: 'Poppins';
+  }
+  .circle {
+        position: relative;
+        top:50%;
+        left:50%;
+       transform:translate(-50%,-90%);
+        width: 8rem;
+        height: 8rem;
+        background: #ff6347;
+        border-radius: 50%
+      }
+  .circle div{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    color: white;
+    font-weight:bold;
+    text-align:center;
+    
+  }
+  
+  .details{
+    position: relative;
+    top: 20%;
+    font-size:2rem;
+    color: black;
+    text-align:center;
+    box-sizing:border-box;
+  }
+  .details span{
+     display: block;
+  }
+  .red{
+    background: rgba(175, 4, 4, 0.932);
+  }
+  .green{
+    background: rgba(118, 184, 19, 0.76);
+  }

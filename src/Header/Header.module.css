@@ -1,0 +1,191 @@
+.section_header{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, rgba(146, 60, 181, 0.7) 0%, rgba(0, 0, 0, 0.8) 74%),url("../Assets/Images/railway_1.jpg");
+    background-size: cover;
+}
+.Logo{
+    font-family: Anders;
+    position: relative;
+    float: left;
+    top:1.5rem;
+    left: 5.5rem;
+    margin-right: 1rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.section_text a {
+    position: relative;
+    float: left;
+    top:1rem;
+    left: 5.5rem;
+    color: white;
+    margin: 2.5rem;
+    text-decoration: none;
+    font-family:'Poppins'
+}
+.section_text a:hover{
+    
+    padding-bottom: 0.5rem;
+    border-bottom:2px solid white;
+    
+}
+.section_text button {
+    position: relative;
+    float: left;
+    background-color: transparent;
+    top:1rem;
+    left: 5.5rem;
+    color: white;
+    border: none;
+    margin: 2.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family:'Poppins'
+}
+.section_text button:hover{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom:2px solid white;
+    
+}
+.section_text button:focus{
+    outline: 0;
+}
+.section_sign a{
+    position: relative;
+    float: right;
+    top:1rem;
+    right: 3rem;
+    color: white;
+    margin: 2.5rem;
+    text-decoration: none;
+    font-family:'Poppins'
+
+}
+
+.section_sign a:hover{
+    
+    padding-bottom: 0.5rem;
+    border-bottom:2px solid white;
+    
+}
+
+.nav div{
+    height: 4px;
+    background-color: white;
+    margin: 5px,0;
+    border-radius: 25px;
+}
+.nav{
+    position: relative;
+    top:3.3rem;
+    right: 5rem;
+    float: right;
+    width: 30px;
+    display: block;
+    margin: 1em,0,1em;
+}
+.one{
+    width: 30px;
+    margin: 3px;
+}
+.two{
+    width: 20px;
+    margin: 3px;
+}
+.three{
+    width: 25px;
+    margin: 3px;
+}
+
+.nav:hover div{
+    background-color: white;
+    width: 30px;
+}
+.text{
+    position: absolute;
+    top:70%;
+    left: 5.5rem;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Poppins-bold';
+}
+.text span:nth-of-type(2){
+    display: block;
+}
+
+.btn{
+    position: relative;
+    top:3rem;
+    left: 0rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0, .1);
+}
+.btn:active{
+    transform: translateY(1.5px);
+}
+@media (max-width:991px){
+    .section_sign{
+        position: absolute;
+        top: 6rem;
+        left: 19rem;
+        float: left;
+    }
+}
+
+@media (min-width:693px){
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:693px){
+    .Logo{
+        position: relative;
+        float: left;
+        font-size: 30px;
+        top: 1.4rem;
+        left:10%;
+    }
+    
+    .section_text{
+        display: none;
+    }
+    .section_sign{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .text{
+        top:50%;
+        left:10%
+    }
+    .nav{
+        right: 2rem;
+    }
+    .text span{
+        display: block
+    }
+}
+

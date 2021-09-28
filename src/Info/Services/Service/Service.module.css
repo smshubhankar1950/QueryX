@@ -1,0 +1,73 @@
+.container{
+    position:relative;
+    float: left;
+    height:20rem;
+    width:15rem;
+    margin:0.5rem;
+    z-index: inherit;
+    border:2px solid #d9d9d9;
+    border-radius:10px;
+  }
+  .service{
+    position: absolute;
+    top:2rem;
+    left:2rem;
+    font-size:1rem;
+    color:#00006D;
+    font-weight:700;
+  }
+  .service div{
+    color:#FF750F;
+    margin-top: 1rem;
+    font-size:1.5rem;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .subService{
+    position: relative;
+    display: block;
+    top:8rem;
+    width: fit-content;
+    margin: 2px;
+    left:2rem;
+    font-size: 1rem;
+    font-family: 'Public Sans', sans-serif;
+  }
+  .subService span{
+    font-size:1.5rem;
+    color:green;
+  }
+  .btn{
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border:none;
+    color:white;
+    padding: 1rem;
+    padding-left:4rem;
+    padding-right:4rem;
+    border-radius:1rem;
+    font-size: 1.2rem;
+    background-color:#FF750F;
+    outline:none;
+    cursor:pointer;
+    font-family: 'Public Sans', sans-serif;
+  }
+  
+  .container:hover{
+    border: 2px solid green;
+  }
+
+  @media(max-width:780px){
+    .container{
+      top:1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0.2rem;
+      height: 50%;
+      width: 70%;
+      float: none;
+    }
+  }
+ 

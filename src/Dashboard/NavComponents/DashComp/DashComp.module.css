@@ -1,0 +1,23 @@
+.Conatiner{
+        position:absolute;
+        top:10vh;
+        left:8vw;
+        height: 80vh;
+        width:80vw;
+        float: left
+    }
+.Heading{
+    height: 5rem;
+    width: max-content;
+    color: black;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    color: black;
+}
