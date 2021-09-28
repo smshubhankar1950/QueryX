@@ -5,8 +5,7 @@ import ProfileIc from "../../Assets/Icons/profile.svg";
 import IssueIc from "../../Assets/Icons/issue.svg";
 import StatusIc from "../../Assets/Icons/status.svg";
 import LogoutIc from "../../Assets/Icons/Logout.svg";
-import { Redirect,Route,NavLink, withRouter,Switch } from "react-router-dom";
-import DashComp from "../NavComponents/DashComp/DashComp";
+import {NavLink, withRouter} from "react-router-dom";
 const NavBar = (props)=>{
 
     console.log(props)

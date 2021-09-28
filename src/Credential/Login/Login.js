@@ -1,29 +1,29 @@
 import React from 'react'
 import classes from './Login.module.css';
-import { useState } from 'react';
-import loginbg from "../../Assets/Images/loginbg.jpg"
+// import { useState } from 'react';
+// import loginbg from "../../Assets/Images/loginbg.jpg"
 import { Button, Form } from 'react-bootstrap';
 
 const Login =(props)=>{
-    const [state, setState]= useState({
-        userName:"",
-        password:""
-    })
-    let cred ={
-        user:"smshu",
-        pwd:"lol1850"
-    }
+    // const [state, setState]= useState({
+    //     userName:"",
+    //     password:""
+    // })
+    // let cred ={
+    //     user:"smshu",
+    //     pwd:"lol1850"
+    // }
 
-    let onchange=(event, type)=>{
-        if(type==="usr")
-        {
-            setState({...state,userName:event.target.value})
-        }
-        if(type==="pwd")
-        {
-            setState({...state,password:event.target.value})
-        }
-    }
+    // let onchange=(event, type)=>{
+    //     if(type==="usr")
+    //     {
+    //         setState({...state,userName:event.target.value})
+    //     }
+    //     if(type==="pwd")
+    //     {
+    //         setState({...state,password:event.target.value})
+    //     }
+    // }
     let loginhandler=()=>{
        
             props.history.push({pathname:"/dashboard"})

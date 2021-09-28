@@ -1,15 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
+// import  {useState} from 'react'
 import classes from './Register.module.css';
 import { Button, Form } from 'react-bootstrap';
-import axios from 'axios'
+// import axios from 'axios'
 const Register =()=>{
-    const [state, setState]=useState({
-        fullname:"",
-        email:"",
-        password:"",
-        dob:"",
-    });
-    const onChangeHandler=(event, id)=>{
+    // const [state, setState]=useState({
+    //     fullname:"",
+    //     email:"",
+    //     password:"",
+    //     dob:"",
+    // });
+  /*  const onChangeHandler=(event, id)=>{
         switch (id){
             case "fn":
                 setState({
@@ -40,17 +41,17 @@ const Register =()=>{
 
         }
 
-    }
-    const user={
-        ...state
-    }
-    const submitHandler=(event)=>{
-        event.preventDefault();
-        axios.post("http://localhost:5000/users",{...user}).then(res=>{
-            console.log(res);
-        })
+    }*/
+    // const user={
+    //     ...state
+    // }
+    // const submitHandler=(event)=>{
+    //     event.preventDefault();
+    //     axios.post("http://localhost:5000/users",{...user}).then(res=>{
+    //         console.log(res);
+    //     })
 
-    }
+    // }
     return(
         <div className={classes.section_back}>
         <div className={classes.section_login}>
