@@ -2,7 +2,7 @@
   background-color: rgb(1, 30, 63);
 } */
 .sideNav{
-    position:fixed;
+    position:relative;
     top:0;
     left:0;
     height:100vh;
@@ -19,15 +19,14 @@
   .nav div{
     text-align: left;
     padding:0.75rem 1.5rem;
-    width:max-width;
     border-radius: 1rem;
   }
   .nav img{
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    padding:1rem;
     height: 30px;
+    margin: 1rem 1rem 1rem 0rem;
     width: 30px;
   }
   .bottom{
@@ -40,7 +39,7 @@
   }
   .bottom img{
     vertical-align:middle;
-    padding:1rem;
+    margin: 1em;
     height: 30px;
     width: 30px;
   }
@@ -90,5 +89,9 @@
     width: 100%;
     transform: rotate(0);
   }
-
+@media (max-width:576px) {
+  .nav{
+    
+  }
+}
   

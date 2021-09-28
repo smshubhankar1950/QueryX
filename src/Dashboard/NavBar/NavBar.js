@@ -25,10 +25,6 @@ const NavBar = (props)=>{
         <div><img src={StatusIc} alt="status" className={classes.filter_white}></img></div>
         </div>
         <div className={classes.bottom}><img src={LogoutIc} alt="logout" className={classes.filter_green}></img></div>
-        <Switch>
-        <Route path="/dashboard/dash" exact component={DashComp}></Route>
-        <Redirect from="/dashboard" to="/dashboard/dash"/>
-        </Switch>
         </div>
         )
 }
