@@ -1,7 +1,7 @@
 .container{
     position:relative;
     float: left;
-    height:20rem;
+    height:fit-content;
     width:15rem;
     margin:0.5rem;
     z-index: inherit;
@@ -9,12 +9,12 @@
     border-radius:10px;
   }
   .service{
-    position: absolute;
+    position: relative;
     top:2rem;
-    left:2rem;
     font-size:1rem;
     color:#00006D;
     font-weight:700;
+    margin-bottom: 3em;
   }
   .service div{
     color:#FF750F;
@@ -26,7 +26,6 @@
   .subService{
     position: relative;
     display: block;
-    top:8rem;
     width: fit-content;
     margin: 2px;
     left:2rem;
@@ -38,15 +37,12 @@
     color:green;
   }
   .btn{
-    position: absolute;
-    top:80%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     border:none;
+    width: 90%;
+    margin: 1em 0em 1em;
     color:white;
     padding: 1rem;
-    padding-left:4rem;
-    padding-right:4rem;
     border-radius:1rem;
     font-size: 1.2rem;
     background-color:#FF750F;

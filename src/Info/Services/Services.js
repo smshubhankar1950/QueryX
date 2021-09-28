@@ -39,15 +39,17 @@ const Services=(props)=>{
     <React.Fragment>
     <Backdrop show={props.show} display={props.display}/>
     <div className={style}>
-    <div className={classes.close} onClick={props.display}>
-                <div id="icon" className={classes.Icon}>
+    <div className={classes.close}>
+                <div id="icon" className={classes.Icon} onClick={props.display}>
                     <span></span>
                     <span></span>
                 </div>
         </div>
         <p className={classes.heading}>Here's what we have to offer</p>
         <p className={classes.heading2}>Choose the plan that best fits your current requirement</p>
+        <div className={classes.offers}>
         {comp}
+        </div>
     </div>
     </React.Fragment>)
 }

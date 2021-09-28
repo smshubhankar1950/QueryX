@@ -39,24 +39,26 @@ const Login =(props)=>{
             <div></div>
             <Form className={classes.form}>
                 <Form.Group className="mb-3" style={{padding:"1em 0em 0em"}} controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" size="lg" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" style={{padding:"1em 0em 0em"}} controlId="formBasicPassword">
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="password" size="lg" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" style={{textAlign:"left"}}controlId="formBasicCheckbox">
+                <Form.Group className="mb-3" style={{textAlign:"left", padding:"1em 0em 0em"}} controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Remember me" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <div className="d-grid gap-2">
+                <Button variant="primary" size="lg" style={{margin:"1em 0em 0em"}}  type="submit">
                     Submit
                 </Button>
-                <Button variant="light" type="submit">
+                <Button variant="light" style={{margin:"1em 0em 0em", display:"block"}}  type="submit">
                     Forgot Password
                 </Button>
+                </div>
             </Form>
             </div>
-            <div className="col-md-6">
+            <div className={`col-md-6 ${classes.section2}`}>
                 <div className={classes.image}></div>
             </div>
             </div>
