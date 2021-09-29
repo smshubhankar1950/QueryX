@@ -1,12 +1,10 @@
 .container{
-    position:relative;
-    float: left;
     height:fit-content;
-    width:15rem;
     margin:0.5rem;
-    z-index: inherit;
-    border:2px solid #d9d9d9;
-    border-radius:10px;
+    min-height: 30em;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0 5px 10px rgb(0 9 128 / 4%), 0 7px 18px rgb(0 9 128 / 5%);
   }
   .service{
     position: relative;
@@ -14,7 +12,7 @@
     font-size:1rem;
     color:#00006D;
     font-weight:700;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
   }
   .service div{
     color:#FF750F;
@@ -37,7 +35,6 @@
     color:green;
   }
   .btn{
-    position: relative;
     border:none;
     width: 90%;
     margin: 1em 0em 1em;
@@ -45,25 +42,17 @@
     padding: 1rem;
     border-radius:1rem;
     font-size: 1.2rem;
-    background-color:#FF750F;
+    background: linear-gradient(
+      -45deg, #4e54c8, #8089ff) !important;
+          color: #FFF !important;
     outline:none;
     cursor:pointer;
     font-family: 'Public Sans', sans-serif;
   }
-  
-  .container:hover{
-    border: 2px solid green;
+  .container>p{
+    margin: 1em;
   }
-
-  @media(max-width:780px){
-    .container{
-      top:1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0.2rem;
-      height: 50%;
-      width: 70%;
-      float: none;
-    }
+  .container:hover{
+    border: 2px solid  rgb(0 9 128 / 5%);
   }
  

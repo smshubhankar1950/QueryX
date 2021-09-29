@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './Sidedrawer.module.css'
 import { NavLink } from 'react-router-dom';
-import Services from '../../Info/Services/Services';
 // import Backdrop from '../Backdrop/Backdrop'
 
 const SideDrawer =(props)=>{
@@ -30,7 +29,6 @@ const SideDrawer =(props)=>{
             {/* <div className={classes.icon}>
                         <div className={classes.arrow}></div>
                     </div> */}
-            <Services show={props.showSer} display={props.displaySer}></Services>
         </div>
         </React.Fragment>
  )

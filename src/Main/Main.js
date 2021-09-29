@@ -5,15 +5,14 @@ import Register from "../Credential/Register/Register";
 import DashBoard from "../Dashboard/Dashboard";
 // import DashComp from "../Dashboard/NavComponents/DashComp/DashComp";
 // import NavBar from "../Dashboard/NavBar/NavBar";
-import Header from '../Header/Header';
-import Services from "../Info/Services/Services";
+// import Header from '../LandingPage/Header/Header';
+import LandingPage from "../LandingPage/LandingPage";
 const Main=()=>{
     return(
         <div>
             <Switch>
-                <Route path="/" exact component={Header}/>
+                <Route path="/" exact component={LandingPage}/>
                 <Route path="/dashboard"  component={DashBoard}/>
-                <Route path="/Services" exact component={Services}/>
                 <Route path="/Login" exact component={Login}></Route>
                 <Route path="/Register" exact component={Register}></Route>
                 
