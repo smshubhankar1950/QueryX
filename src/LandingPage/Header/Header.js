@@ -1,6 +1,7 @@
 import React , { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import About from '../../Info/About';
+import ScrollDown from '../../UI/ScrollDown/ScrollDown';
 import SideDrawer from '../../UI/Sidedrawer/Sidedrawer';
 import classes from './Header.module.css';
 // import img_bg  from '../Assets/railway_1.jpg'
@@ -53,6 +54,7 @@ const Header=()=>{
                 Consult us <span>regarding</span> <span>
                 your issue to get<span> expert advice</span></span>
         </div>
+        <ScrollDown/>
         <About show={state.showAbt} display={showAbout}/>
         <SideDrawer open={state.showDrw} close={showDrawer} About={showAbout} openSer={state.openSer}/>
     </div>)
