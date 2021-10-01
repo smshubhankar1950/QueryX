@@ -8,7 +8,11 @@ const SideDrawer =(props)=>{
     if(!props.open){
         classnav=[classes.SideDrawer, classes.Close]
     }
- return(
+    const close = (id)=>{
+        props.scroll(id);
+        props.close();
+    }
+     return(
         <React.Fragment>
         <div className={classnav.join(" ")}>
             <div className={classes.Logo}></div>
@@ -20,8 +24,8 @@ const SideDrawer =(props)=>{
             </div>
             <div className={classes.Logo}>QueryX</div>
             <nav className ={classes.nav}>
-                <div onClick={props.About}>About us</div>
-                <div ><button onClick={props.displaySer}>Services Offered</button></div>
+                <div onClick={()=>close("about")}>About us</div>
+                <div ><button onClick={()=>close("services")}>Services Offered</button></div>
                 <div ><NavLink to="/Login">Login</NavLink></div>
                 <div ><NavLink to="/Register" >Register</NavLink></div>
             </nav>

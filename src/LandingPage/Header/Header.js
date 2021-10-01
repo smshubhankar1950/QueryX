@@ -9,20 +9,9 @@ import classes from './Header.module.css';
 const Header=()=>{
     const [state,setState]=useState(
         {
-            showAbt:false,
-            showSrv:false,
             showDrw:false,
         }
     );
-    const showAbout =()=>{
-        setState((prevState)=>
-        {
-            return({showAbt:!prevState.showAbt})
-            
-            }
-       )
-
-    }
     const showDrawer =()=>{
         setState((prevState)=>
     {
@@ -61,7 +50,7 @@ const Header=()=>{
         </div>
         <ScrollDown/>
         {/* <About show={state.showAbt} display={showAbout}/> */}
-        <SideDrawer open={state.showDrw} close={showDrawer} About={showAbout} openSer={state.openSer}/>
+        <SideDrawer open={state.showDrw} close={showDrawer} scroll={smoothScroll}/>
     </div>)
         
 }

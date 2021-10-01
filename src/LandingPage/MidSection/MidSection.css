@@ -5,7 +5,7 @@
 }
 
 .heading{
-    padding: 4em;
+    padding: 2em 4em 4em;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -31,6 +31,11 @@
 }
 
 @media (max-width:576px) {
+    .single-feature{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:948px) {
     .single-feature{
         margin-bottom: 10px;
     }

@@ -4,10 +4,11 @@
 }
 .heading{
     position: relative;
-    font-size: 2em !important;
+    font-size: x-large !important;
     font-weight: 700;
     top:2rem;
     left: 50%;
+    font-family: 'Poppins-bold';
     width: fit-content;
     transform: translateX(-50%);
 }

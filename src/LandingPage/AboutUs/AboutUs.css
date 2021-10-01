@@ -32,3 +32,12 @@
         margin: 1em 2em 1em;
     }
 }
+
+@media (max-width:948px) {
+    .About{
+        margin: 2em 1.7em 0em;
+    }
+    .AboutContent{
+        margin: 1em 2em 1em;
+    }
+}
