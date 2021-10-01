@@ -1,0 +1,34 @@
+.headerAbout{
+    padding-top: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins-bold';
+    font-size: x-large;
+}
+.About{
+    padding-bottom: 1em;
+    text-align:left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Poppins-bold';
+    font-size: larger;
+}
+.AboutContent{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.stat{
+    font-size: 35px;
+    color: #0c5adb;
+    font-weight: bold;
+}
+
+@media (max-width:576px) {
+    .About{
+        margin: 2em 1.7em 0em;
+    }
+    .AboutContent{
+        margin: 1em 2em 1em;
+    }
+}

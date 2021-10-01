@@ -36,12 +36,12 @@ const service_of=[
 ]
 const Services=(props)=>{
     let comp = service_of.map(
-        (obj)=>
-        <div className="col-md">
-            <Service key={obj.id} obj={obj} />
+        (obj, index)=>
+        <div className="col-lg">
+            <Service key={index} obj={obj} />
         </div>)
     return(
-    <div className={classes.display}>
+    <div className={classes.display} id="services">
         <div className="container">
             <div className="row" style={{flexDirection: "column"}}> 
                 <div className={classes.heading}>Here's what we have to offer</div>

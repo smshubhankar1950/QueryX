@@ -1,6 +1,6 @@
 import React , { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import About from '../../Info/About';
+// import About from '../../Info/About';
 import ScrollDown from '../../UI/ScrollDown/ScrollDown';
 import SideDrawer from '../../UI/Sidedrawer/Sidedrawer';
 import classes from './Header.module.css';
@@ -32,14 +32,19 @@ const Header=()=>{
        )
 
     }
+
+    const smoothScroll = function(id) {
+        var target = document.getElementById(id);
+        target.scrollIntoView()
+    }
     return(
     <div className={classes.section_header}>
         <h1 className={classes.Logo}>QueryX</h1>
         <div  className={classes.section_text}>
-            <button onClick={()=>showAbout()}>About Us</button>
+            <button onClick={()=>smoothScroll("about")}>About Us</button>
             {/* eslint-disable-next-line*/}
-            <a href="#" >Services Offered</a>
-            <NavLink to="/faq">FAQ</NavLink>
+            <button onClick={()=>smoothScroll("services")}>Services Offered</button>
+            <button onClick={()=>smoothScroll("why")}>Why Us</button>
         </div>
         <div  className={classes.section_sign}>
         <NavLink to="/Login">Login</NavLink>
@@ -55,7 +60,7 @@ const Header=()=>{
                 your issue to get<span> expert advice</span></span>
         </div>
         <ScrollDown/>
-        <About show={state.showAbt} display={showAbout}/>
+        {/* <About show={state.showAbt} display={showAbout}/> */}
         <SideDrawer open={state.showDrw} close={showDrawer} About={showAbout} openSer={state.openSer}/>
     </div>)
         

@@ -1,6 +1,7 @@
 .midSection{
     min-height: 100vh;
     height: 100%;
+    background-color: #f9f9f9!important;
 }
 
 .heading{
@@ -27,4 +28,10 @@
 }
 .single-feature>div:nth-child(3){
     padding:0 10px 0;
+}
+
+@media (max-width:576px) {
+    .single-feature{
+        margin-bottom: 10px;
+    }
 }
