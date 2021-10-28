@@ -5,7 +5,10 @@ import ScrollDown from '../../UI/ScrollDown/ScrollDown';
 import SideDrawer from '../../UI/Sidedrawer/Sidedrawer';
 import classes from './Header.module.css';
 // import img_bg  from '../Assets/railway_1.jpg'
-
+export const smoothScroll = function(id) {
+    var target = document.getElementById(id);
+    target.scrollIntoView()
+}
 const Header=()=>{
     const [state,setState]=useState(
         {
@@ -21,13 +24,8 @@ const Header=()=>{
        )
 
     }
-
-    const smoothScroll = function(id) {
-        var target = document.getElementById(id);
-        target.scrollIntoView()
-    }
     return(
-    <div className={classes.section_header}>
+    <div className={classes.section_header} id="home">
         <h1 className={classes.Logo}>QueryX</h1>
         <div  className={classes.section_text}>
             <button onClick={()=>smoothScroll("about")}>About Us</button>
