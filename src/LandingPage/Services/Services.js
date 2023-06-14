@@ -37,8 +37,8 @@ const service_of=[
 const Services=(props)=>{
     let comp = service_of.map(
         (obj, index)=>
-        <div className="col-lg">
-            <Service key={index} obj={obj} />
+        <div className="col-lg" key={index}>
+            <Service obj={obj} />
         </div>)
     return(
     <div className={classes.display} id="services">
